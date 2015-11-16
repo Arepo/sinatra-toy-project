@@ -1,1 +1,6 @@
+<% settings.articles.each do |article| %>
+  <%= erb :post, locals: { article: article } %>
+<% end %>
 <p>Hello world</p>
+<%= markdown("*Markdown* test") %>
+

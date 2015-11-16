@@ -1,0 +1,20 @@
+development:
+  adapter: psql
+  database: db/development.sqlite3
+  pool: 5
+  timeout: 5000
+
+production:
+  adapter: psql
+  encoding: utf8
+  reconnect: false
+  database: somedatabase_dev
+  pool: 5
+  username: root
+  password:
+
+test: &test
+  adapter: psql
+  database: db/test.sqlite3
+  pool: 5
+  timeout: 5000
