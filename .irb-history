@@ -1,0 +1,88 @@
+arr = ['write', 'word', 'random']
+arr.each { |word| word.capitalize }
+arr.each { |word| word.upcase }
+arr.map { |word| word.capitalize }
+arr.map(&:capitalize)
+supplier = Supplier.new
+supplier.company = 'moo'
+supplier.capsule_party_id = 2
+supplier.svae
+supplier.save
+supplier.primary_email = 'moo'
+supplier.valid?
+supplier.errors.messages
+end_of_association_chain
+supp = )
+Supplier.new
+supp = _
+supp.valid?
+supp.errors.messages
+User.find_by_email('sasha@zzz.co.uk')
+user = _
+user.admin = true
+user.operations = false
+user.save
+CheckIn
+CheckIn.find 1432
+CheckOut
+CheckOut.find 473
+CheckOut.find(473).keys_completed = false
+CheckOut.find(473).update_compl
+format
+CheckOut.find(473).
+CheckOut.find(473).update_column(:notes, nil)
+CheckIn.find(1432)
+CheckIn.find(1432).update_column(:keys_completed, false)
+CheckIn.last
+CheckIn.find(1432).u
+CheckIn.find(1432).update_column(:completed, false)
+CheckIn.find(1432).update_column(:keyscompleted, false)
+CheckIn.find(1432).update_
+CheckOut.find(473).bookings
+CheckOut.find(473).booking
+CheckOut.find(473).rentals.
+ef
+CheckOut.find(473).rentals
+CheckOut.find(473).rental.update_columns(building_keys: 3, apartment_keys: 2)
+CheckOut.find(473).rental.update_attributes(building_keys: 3, apartment_keys: 2)
+CheckOut.find(473).rental.update_column(:sets_of_keys_issued, 4)
+CheckOut.find(473).rental
+rental.key_return
+CheckOut.find(473).rental.key_return
+CheckOut.find(473).rental.update_column(:key_return, 'zzz_leave_all_keys_in_property')
+CheckOut.find(473).update_column(:completed, true)
+CheckOut.find(473).update_column(:completed, false)
+gs
+CheckOut.find(473)
+CheckOut.find(473).update_column(:keys_completed, false)
+CheckOut.find(473).guest_documentation_removed
+CheckOut.find(473).guest_documentation_removed = nil
+CheckOut.find(473).update_column(:clear_out_completed, false)
+Date.now
+require 'date'
+Date.new
+require 'time'
+Date.now.to_s
+Date.new.to_s
+Time.parse Date.new.to_s
+Time.parse(Date.new.to_s).xmlschema
+YAML
+Yaml
+require 'yaml'
+def monkey
+class Foo
+def self.monkey
+allocate
+end
+Foo.monkey
+Foo.monkey.class
+require 'Etc'
+require 'etc'
+Etc
+Etc.getlogin
+ENV.delete('HOME')
+Dir.home
+Dir.home(Etc.getlogin)
+Logger
+require 'logger'
+quit

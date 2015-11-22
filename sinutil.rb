@@ -2,6 +2,8 @@ require 'bundler'
 Bundler.require
 require 'ostruct'
 require 'time'
+require 'pry'
+require 'yaml'
 
 class UtilBlog < Sinatra::Base
   enable :logging
@@ -9,7 +11,7 @@ class UtilBlog < Sinatra::Base
 
   set :root, File.expand_path('../', __FILE__)
 
-  Dir.glob "#{root}/articles/md" do |file|
+  Dir.glob "#{root}/articles/*.md" do |file|
     meta, content = File.read(file).split("\n\n", 2)
     article = OpenStruct.new YAML.load(meta)
     article.content = content
