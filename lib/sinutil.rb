@@ -1,15 +1,19 @@
 require 'bundler'
 Bundler.require
+require 'github_hook'
 require 'ostruct'
 require 'time'
 require 'pry'
 require 'yaml'
 
 class UtilBlog < Sinatra::Base
+  use GithubHook
+
   enable :logging
   set :articles, []
+  set :app_file, __FILE__
 
-  set :root, File.expand_path('../', __FILE__)
+  set :root, File.expand_path('../../', __FILE__)
 
   Dir.glob "#{root}/articles/*.md" do |file|
     meta, content = File.read(file).split("\n\n", 2)
@@ -29,6 +33,4 @@ class UtilBlog < Sinatra::Base
   get '/' do
     erb :index
   end
-
-  run! if app_file == $0
 end
